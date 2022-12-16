@@ -16,6 +16,7 @@ a {
 body {
     font-family: 'Arial', 'sans-serif';
     color: white;
+    background-color: #000;
 }
 
 .showcase {
@@ -96,30 +97,6 @@ body {
     font-weight: 500;
     margin-bottom: 20px;
 }
-
-.showcase-content .email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.showcase-content input {
-    width: 70%;
-    padding: 20px;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.showcase-content .secondary-btn {
-    display: inline-block;
-    width: 30%;
-    background-color: #e50914;
-    font-size: 30px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    padding: 10px;
-}
-
 
 /* second section */
 
@@ -291,7 +268,130 @@ body {
     font-weight: 500;
 }
 
+/* Faq */
 
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 80px 20px;
+}
+
+.faq .container {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq h1 {
+    font-size: 3.3rem;
+    margin-bottom: 50px;
+}
+
+.faq .que-container {
+    padding: 0rem 8rem;
+    width: 100%;
+}
+
+.faq .que-container .que-box {
+    background-color: #303030;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.faq .que-container .que-box #que {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 20px 20px;
+}
+
+.faq p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* utils */
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email input {
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.secondary-btn {
+    display: flex;
+    width: 30%;
+    background-color: #e50914;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 15px 20px;
+}
+
+.footer-box {
+    background-color: #000;
+    color: #303030;
+}
+
+.footer {
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}
+
+.footer .lang-select {
+    margin-top: 2rem;
+    color: #999;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+}
+
+.footer select {
+    padding: 12px 10px;
+    font-size: 1rem;
+    background: none;
+    color: #999;
+    border-radius: 2px;
+    border: 1px solid #303030;
+    margin: 30px 0;
+}
 
 
 @media (max-width:952px) {
@@ -307,7 +407,7 @@ body {
         align-items: center;
     }
 
-    .showcase-content .secondary-btn {
+    .secondary-btn {
         width: auto;
         background-color: #e50914;
         font-size: 17px;
@@ -331,9 +431,9 @@ body {
         margin-bottom: 1rem;
     }
 
-    .showcase-content input {
+    .email input {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
         font-size: 15px;
         margin-bottom: 20px;
     }
@@ -464,6 +564,44 @@ body {
     .fifth .wrapper #right h2 {
         font-size: 1.3rem;
     }
+
+    /* faq */
+
+    .faq {
+        padding: 80px 20px;
+        height: fit-content;
+    }
+
+    .faq .container {
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .faq h1 {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+
+    .faq .que-container {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .faq .que-container .que-box {
+        margin-bottom: 0.5rem;
+    }
+
+    .faq .que-container .que-box #que {
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 15px 20px;
+    }
+
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -515,7 +653,7 @@ body {
         align-items: center;
     }
 
-    .showcase-content .secondary-btn {
+    .secondary-btn {
         width: auto;
         background-color: #e50914;
         font-size: 17px;
@@ -539,9 +677,9 @@ body {
         margin-bottom: 1rem;
     }
 
-    .showcase-content input {
+    .email input {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
         font-size: 15px;
         margin-bottom: 20px;
     }
@@ -671,5 +809,40 @@ body {
 
     .fifth .wrapper #right h2 {
         font-size: 1.1rem;
+    }
+
+    /* faq */
+
+    .faq {
+        padding: 50px 0px;
+        height: fit-content;
+        margin: 0px;
+    }
+
+    .faq .container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .faq h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .faq .que-container {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .faq .que-container .que-box {
+        margin-bottom: 0.5rem;
+    }
+
+    .faq .que-container .que-box #que {
+        font-size: 1 .2rem;
+        font-weight: 400;
+        padding: 15px 20px;
     }
 }
